@@ -1,0 +1,93 @@
+/* Estilos básicos para el Navbar */
+.navbar {
+  position: fixed; /* Fija el navbar al tope */
+  top: 0; /* Colócalo en la parte superior */
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejorar la visibilidad */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el botón de categorías */
+.categoria-boton {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.categoria-boton:hover {
+  background-color: #0056b3;
+}
+
+.categoria-icono {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo para cuando el menú está abierto */
+.categoria-icono.abierto {
+  transform: rotate(180deg);
+}
+
+/* Estilo para el desplegable de categorías */
+.categorias-container {
+  position: relative;
+}
+
+.categorias-dropdown {
+  position: absolute;
+  top: 40px; /* Ajuste para que el dropdown quede debajo del botón */
+  background-color: #007bff;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.categorias-dropdown a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+.categorias-dropdown a:hover {
+  background-color: #0056b3;
+  text-decoration: underline;
+}
